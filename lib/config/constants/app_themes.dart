@@ -3,7 +3,7 @@ import 'constants.dart';
 
 normalTheme(BuildContext context) {
   return ThemeData(
-    fontFamily: fontRobotoMono,
+    fontFamily: FONT_ROBOTO_MONO,
     primaryColor: Colors.white,
     disabledColor: Colors.grey,
     cardColor: Colors.white,
@@ -21,7 +21,7 @@ normalTheme(BuildContext context) {
 
 lightTheme(BuildContext context) {
   return ThemeData(
-    fontFamily: fontRobotoMono,
+    fontFamily: FONT_ROBOTO_MONO,
     primarySwatch: Colors.blue,
     primaryColor: Colors.white,
     disabledColor: Colors.grey,
@@ -40,7 +40,7 @@ lightTheme(BuildContext context) {
 
 darkTheme(BuildContext context) {
   return ThemeData(
-    fontFamily: fontRobotoMono,
+    fontFamily: FONT_ROBOTO_MONO,
     primarySwatch: Colors.blue,
     primaryColor: Colors.black,
     disabledColor: Colors.grey,
