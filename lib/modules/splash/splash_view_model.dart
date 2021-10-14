@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_mvvm_get/routes/routes.dart';
 import 'package:flutter_mvvm_get/services/services.dart';
 
@@ -13,9 +15,10 @@ class SplashViewModel extends BaseViewModel {
   @override
   void onInit() async {
     await routeRepository.getRoutes();
-    EasyLoading.showSuccess("success");
-    Get.toNamed(AppRoutes.MAIN_MENU);
-
+    Timer(const Duration(seconds: 3), () {
+      EasyLoading.showSuccess("success");
+      Get.toNamed(AppRoutes.MAIN_MENU);
+    });
     super.onInit();
   }
 }

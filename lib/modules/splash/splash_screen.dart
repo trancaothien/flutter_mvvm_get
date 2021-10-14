@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_get/config/constants/app_icons.dart';
 import 'package:flutter_mvvm_get/shared/shared.dart';
 import 'package:get/get.dart';
 import 'splash_view_model.dart';
@@ -9,9 +10,9 @@ class SplashScreen extends GetView<SplashViewModel> {
   @override
   Widget build(BuildContext context) {
     return WidgetLoadingFullScreen(
-        child: const Scaffold(
+        child: Scaffold(
           body: Center(
-            child: Text('splash'),
+            child: Image.asset(AppIcons.flutterIcon),
           ),
         ),
         loading: controller.loadingSubject);
