@@ -34,7 +34,7 @@ class _LoadingWidget extends StatelessWidget {
       constraints: const BoxConstraints.expand(),
       alignment: Alignment.center,
       child: const Center(
-        child: SpinKitPouringHourGlassRefined(
+        child: SpinKitSquareCircle(
           color: Colors.blue,
           size: 55,
         ),

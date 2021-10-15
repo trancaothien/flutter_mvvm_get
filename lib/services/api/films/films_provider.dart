@@ -7,7 +7,6 @@ class FilmsProvider extends BaseProvider {
   }
 
   Future<Response> getStarWarInfo(String path, int filmId) {
-    print('$path/$filmId');
     return get('$path/$filmId');
   }
 }

@@ -22,7 +22,7 @@ class MainMenuViewModel extends BaseViewModel {
     } else {
       EasyLoading.showToast(res.message!);
     }
-    setLoading(false);
+    Timer(const Duration(seconds: 2), () => {setLoading(false)});
     super.onInit();
   }
 }
