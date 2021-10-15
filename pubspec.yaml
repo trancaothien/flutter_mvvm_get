@@ -11,13 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
-  cupertino_icons: ^1.0.2
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
   
   #common
   get: ^4.3.8
@@ -26,6 +19,12 @@ dev_dependencies:
   rxdart: ^0.27.2
   flutter_spinkit: ^5.1.0
   cached_network_image: ^3.1.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
   flutter_lints: ^1.0.0
 
