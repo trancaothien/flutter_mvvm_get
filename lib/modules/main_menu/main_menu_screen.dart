@@ -10,9 +10,9 @@ class MainMenuScreen extends GetView<MainMenuViewModel> {
   @override
   Widget build(BuildContext context) {
     return WidgetLoadingFullScreen(
-      child: const Scaffold(
+      child: Scaffold(
         body: Center(
-          child: Text('main menu'),
+          child: Obx(() => Text(controller.filmModel.value.openingCrawl ?? '')),
         ),
       ),
       loading: controller.loadingSubject,

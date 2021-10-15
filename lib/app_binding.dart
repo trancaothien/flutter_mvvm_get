@@ -4,8 +4,9 @@ import 'services/api/api.dart';
 class AppBinding extends Bindings {
   @override
   void dependencies() async {
-    Get.put(ApiProvider(), permanent: true);
-    Get.put(AuthRepository(apiProvider: Get.find()), permanent: true);
-    Get.put(RouteRepository(apiProvider: Get.find()), permanent: true);
+    Get.put(FilmsProvider(), permanent: true);
+    Get.put(FilmsRepository(apiProvider: Get.find()), permanent: true);
+    Get.put(AuthProvider(), permanent: true);
+    Get.put(AuthRepository(authProvider: Get.find()), permanent: true);
   }
 }
