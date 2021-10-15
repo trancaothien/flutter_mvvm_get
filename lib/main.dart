@@ -51,9 +51,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       smartManagement: SmartManagement.keepFactory,
       title: 'Flutter MVVM GetX',
       theme: normalTheme(context),
-      locale: TranslationService.locale,
-      fallbackLocale: TranslationService.fallbackLocale,
-      translations: TranslationService(),
+      locale: const Locale('vi', 'VN'),
+      translationsKeys: AppTranslation.translations,
       builder: EasyLoading.init(),
     );
   }

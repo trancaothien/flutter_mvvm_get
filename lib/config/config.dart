@@ -1,3 +1,3 @@
-export './constants/constants.dart';
-export './lang/lang.dart';
-export './notification/notification.dart';
+export 'constants/constants.dart';
+export 'notification/notification.dart';
+export 'translations/app_translations.dart';
