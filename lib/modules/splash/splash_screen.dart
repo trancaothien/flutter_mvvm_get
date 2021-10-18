@@ -10,11 +10,12 @@ class SplashScreen extends GetView<SplashViewModel> {
   @override
   Widget build(BuildContext context) {
     return WidgetLoadingFullScreen(
-        child: Scaffold(
-          body: Center(
-            child: Image.asset(AppIcons.flutterIcon),
-          ),
+      child: Scaffold(
+        body: Center(
+          child: Image.asset(AppIcons.flutterIcon),
         ),
-        loading: controller.loadingSubject);
+      ),
+      loading: controller.loadingSubject,
+    );
   }
 }

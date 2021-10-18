@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'dart:developer';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_mvvm_get/models/models.dart';
 import 'package:flutter_mvvm_get/services/services.dart';
 import 'package:get/get.dart';
 import '../base_module/base_module.dart';
+import '../modules.dart';
 
 class MainMenuViewModel extends BaseViewModel {
   MainMenuViewModel({required this.filmsRepository});
