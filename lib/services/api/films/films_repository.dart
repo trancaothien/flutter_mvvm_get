@@ -11,7 +11,7 @@ class FilmsRepository {
   final NetworkManager networkManager = Get.find<NetworkManager>();
 
   Future<NetworkState<FilmModel>> getStarWarInfo({required int id}) async {
-    if (networkManager.connectionType == Network.NONE) {
+    if (networkManager.connectionType == Network.NO_CONNECTED) {
       return NetworkState.withDisconnect();
     }
     final res =

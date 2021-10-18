@@ -3,5 +3,5 @@
 enum Network {
   CONNECT_TO_WIFI,
   CONNECT_TO_MOBILE,
-  NONE,
+  NO_CONNECTED,
 }

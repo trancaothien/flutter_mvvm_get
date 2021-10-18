@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 
 class NetworkManager extends GetxController {
   //this variable NONE = No Internet, CONNECT_TO_WIFI = connected to WIFI ,CONNECT_TO_MOBIE = connected to Mobile Data.
-  var connectionType = Network.NONE;
+  var connectionType = Network.NO_CONNECTED;
   //Instance of Flutter Connectivity
   final Connectivity _connectivity = Connectivity();
   //Stream to keep listening to network change state
@@ -48,7 +48,7 @@ class NetworkManager extends GetxController {
         update();
         break;
       case ConnectivityResult.none:
-        connectionType = Network.NONE;
+        connectionType = Network.NO_CONNECTED;
         update();
         break;
       default:
