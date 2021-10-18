@@ -37,7 +37,7 @@ class NetworkState<T> {
 
   NetworkState.withDisconnect() {
     log("=========== DISCONNECT ===========");
-    message = "Mất kết nối internet, vui lòng kiểm tra wifi/3g và thử lại!";
+    message = "Disconnect";
     statusCode = ApiConstants.ERROR_DISCONNECT;
     data = null;
   }
